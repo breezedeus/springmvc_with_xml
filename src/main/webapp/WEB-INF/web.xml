@@ -8,6 +8,8 @@
 
     <servlet>
         <servlet-name>springmvcwithxml</servlet-name>
+        <!-- 这个类会把给定package（在{servlet-name}-servlet.xml文件中通过context:component-scan指定）内
+        所有标记为@Controller的类作为请求处理的类。 -->
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
