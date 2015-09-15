@@ -74,6 +74,7 @@
   </dependencies>
 
   <build>
+    <!-- 如果没有指定下面这行，默认情况打包后的包文件命名为”{artifactId}-{version}.war“ -->
     <finalName>springmvcwithxml</finalName>
 
     <plugins>
@@ -97,6 +98,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
+          <!-- 明确用来编译此项目的JDK版本号 -->
           <source>${jdk.version}</source>
           <target>${jdk.version}</target>
         </configuration>

@@ -13,6 +13,11 @@
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/springmvcwithxml-servlet.xml</param-value>
+        </init-param>
+        <!-- 注：init-param要放在load-on-startup前面。 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
 
@@ -21,10 +26,9 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <!-- 默认情况会使用调用{servlet-name}-servlet.xml文件，所以这里此设置可省略 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/springmvcwithxml-servlet.xml</param-value>
+        <param-value></param-value>
     </context-param>
 
     <listener>
