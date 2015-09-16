@@ -46,7 +46,7 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
 ### 设置`contextConfigLocation`的两种方法
 
 * 在设置`servlet-class`时一起设置：
-<code>
+```xml
     <servlet>
         <servlet-name>springmvcwithxml</servlet-name>
         <!-- 这个类会把给定package（在{servlet-name}-servlet.xml文件中通过context:component-scan指定）内
@@ -60,16 +60,16 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-</code>
+```
 <br>注：init-param必须要放在load-on-startup前面。
 * 在`context-param`里单独设置：<br>
-<code>
+```xml
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <!-- 默认情况会使用调用{servlet-name}-servlet.xml文件，所以下面这行可以写成：“<param-value></param-value> ”。 -->
         <param-value>/WEB-INF/springmvcwithxml-servlet.xml</param-value>
     </context-param>
-</code>
+```
 
 ## 部署到服务器上
 把打包后的`.war`拷贝到服务器上tomcat的目录webapps里面，tomcat会自动把`.war`文件解包，然后服务就可以用了。
