@@ -2,20 +2,20 @@
 # Maven使用
 
 ## 生成Web应用
-<code>
+<pre>
 $ mvn archetype:generate -DgroupId={project-packaging}
 	-DartifactId={project-name}
 	-DarchetypeArtifactId=maven-archetype-webapp
 	-DinteractiveMode=false
-</code>
+</pre>
 
 例如：<br>
-<code>
+<pre>
 $ mvn archetype:generate -DgroupId=org.breezedeus
 	-DartifactId=springmvcwithxml
 	-DarchetypeArtifactId=maven-archetype-webapp
 	-DinteractiveMode=false
-</code>
+</pre>
 
 当然，更简单的方式是直接用IDE界面进行操作。
 
