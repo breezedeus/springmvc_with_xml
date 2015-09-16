@@ -2,14 +2,14 @@
 # Maven使用
 
 ## 生成Web应用
-<pre>
+```bash
 $ mvn archetype:generate -DgroupId={project-packaging}
 	-DartifactId={project-name}
 	-DarchetypeArtifactId=maven-archetype-webapp
 	-DinteractiveMode=false
-</pre>
+```
 
-例如：<br>
+例如：
 <pre>
 $ mvn archetype:generate -DgroupId=org.breezedeus
 	-DartifactId=springmvcwithxml
