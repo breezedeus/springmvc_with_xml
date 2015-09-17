@@ -39,8 +39,9 @@ $ mvn archetype:generate -DgroupId=org.breezedeus
 ## 调用图
 
 * 启动时：<br>
-web.xml --> springmvcwithxml-servlet.xml --> Controllers：生成模型处理数据，把结果返回给特定视图 --> 视图：/WEB-INF/pages/index.jsp
+web.xml --> springmvcwithxml-servlet.xml --> Controllers
 * 调用时：<br>
+Controllers：生成模型处理数据，把结果返回给特定视图 --> 视图：/WEB-INF/pages/index.jsp
 
 ## web.xml
 ### 设置`contextConfigLocation`的两种方法
