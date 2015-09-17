@@ -61,7 +61,7 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
         <load-on-startup>1</load-on-startup>
     </servlet>
 ```
-    注：`init-param`必须要放在`load-on-startup`前面。
+注：`init-param`必须要放在`load-on-startup`前面。
 * 在`context-param`里单独设置：<br>
 ```xml
     <context-param>
