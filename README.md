@@ -61,7 +61,8 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
         <load-on-startup>1</load-on-startup>
     </servlet>
 ```
-<br>注：init-param必须要放在load-on-startup前面。
+    注：init-param必须要放在load-on-startup前面。
+    
 * 在`context-param`里单独设置：<br>
 ```xml
     <context-param>
@@ -79,6 +80,10 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
 ## 运行网址
 * <http://localhost:8080/springmvcwithxml/>
 * <http://localhost:8080/springmvcwithxml/breezedeus>
+* <http://localhost:8080/springmvcwithxml/hello>
+* <http://localhost:8080/springmvcwithxml/two>
+* <http://localhost:8080/springmvcwithxml/two/breezedeus>
+* <http://localhost:8080/springmvcwithxml/two/hello>
 
 上面网址里的`springmvcwithxml`，是在文件`pom.xml`里通过下面的行设定的：<br>
      `<finalName>springmvcwithxml</finalName>` <br>
