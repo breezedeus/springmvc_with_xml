@@ -10,12 +10,12 @@ $ mvn archetype:generate -DgroupId={project-packaging}
 ```
 
 例如：
-<pre>
+```bash
 $ mvn archetype:generate -DgroupId=org.breezedeus
 	-DartifactId=springmvcwithxml
 	-DarchetypeArtifactId=maven-archetype-webapp
 	-DinteractiveMode=false
-</pre>
+```
 
 当然，更简单的方式是直接用IDE界面进行操作。
 
@@ -93,3 +93,4 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
 
 * <http://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/>
 * <http://javahash.com/spring-4-mvc-hello-world-tutorial-full-example/>
+* <http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/mvc.html>

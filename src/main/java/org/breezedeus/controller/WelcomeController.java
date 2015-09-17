@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class BaseController {
+public class WelcomeController {
 
     private static int counter = 0;
     private static final String VIEW_INDEX = "index";
-    private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
+    private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 
     /**
      * @return 这里返回结果为index，所以接下来会去执行WEB-INF/pages/index.jsp文件。
