@@ -62,7 +62,7 @@ web.xml --> springmvcwithxml-servlet.xml --> Controllers
     </servlet>
 ```
 注：`init-param`必须要放在`load-on-startup`前面。
-* 在`context-param`里单独设置：<br>
+* 在`context-param`里单独设置（相当于全局配置。不是跟某个Controller有关的配置，可以单独放在一个“.xml”文件中，在这里单独进行设置）：
 ```xml
     <context-param>
         <param-name>contextConfigLocation</param-name>
