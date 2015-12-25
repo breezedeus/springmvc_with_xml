@@ -85,10 +85,10 @@ Controllers：生成模型处理数据，把结果返回给特定视图 --> 视�
 * <http://localhost:8080/springmvcwithxml/two/breezedeus>
 * <http://localhost:8080/springmvcwithxml/two/hello>
 
-上面网址里的`springmvcwithxml`，是在文件`pom.xml`里通过下面的行设定的：<br>
-     ```xml
-        <finalName>springmvcwithxml</finalName>
-     ``` <br>
+上面网址里的`springmvcwithxml`，是在文件`pom.xml`里通过下面的行设定的：
+```xml
+   <finalName>springmvcwithxml</finalName>
+``` <br>
 其实也就是放到tomcat里webapps目录下的war包名称。
 
 而在`springmvcwithxml`后的部分，则根据代码里Controller的设置进行路由。
