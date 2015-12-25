@@ -86,12 +86,14 @@ Controllers：生成模型处理数据，把结果返回给特定视图 --> 视�
 * <http://localhost:8080/springmvcwithxml/two/hello>
 
 上面网址里的`springmvcwithxml`，是在文件`pom.xml`里通过下面的行设定的：<br>
-     `<finalName>springmvcwithxml</finalName>` <br>
+     ```xml
+        <finalName>springmvcwithxml</finalName>
+     ``` <br>
 其实也就是放到tomcat里webapps目录下的war包名称。
 
 而在`springmvcwithxml`后的部分，则根据代码里Controller的设置进行路由。
-在我们的例子中，`springmvcwithxml/`会调用`BaseController::welcome()`，
-而`springmvcwithxml/breezedeus`则会调用`BaseController::welcomeName()`。
+在我们的例子中，`springmvcwithxml/`会调用`WelcomeController::welcome()`，
+而`springmvcwithxml/breezedeus`则会调用`WelcomeController::welcomeName()`。
 
 
 # References
